@@ -5,30 +5,31 @@ import { Text } from 'react-native';
 import { Button } from 'react-native';
 import { StatusBar } from 'react-native';
 import { useRoute } from '@react-navigation/native';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../App';
 
-const VideoScreen = () => {
+type VideoScreenProps = NativeStackScreenProps<RootStackParamList, "VideoScreen">
+
+const VideoScreen: React.FC<VideoScreenProps> = ({ route }) => {
     const video = useRef(null);
 
-    const { params: {
-        id,
-        title,
-        description,
-        videoUrl
-    }} = useRoute()
-
+    const { lecture } = route.params
+    
+    const { title, videoUrl, description } = lecture
+    
     return (
         <View className="flex-1 bg-white" style={{paddingTop:StatusBar.currentHeight}}>  
             <Video
                 ref={video} 
                 source={{ uri: videoUrl }}
                 useNativeControls
-                resizeMode='contain'
                 isLooping
+                shouldPlay
                 className="w-full h-56"   
             />
 
-            <Text className=" font-bold text-lg px-2 py-2">{title}</Text>               
-            <Text className=" font-bold text-sm text-gray-500 px-2 ">{description}</Text>
+            <Text className="px-2 py-2 text-lg font-bold ">{title}</Text>               
+            <Text className="px-2 text-sm font-bold text-gray-500 ">{description}</Text>
         </View>
     );
 }

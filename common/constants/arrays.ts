@@ -20,7 +20,7 @@ const courses = [
         id: "1",
         title: "Learn Python: The Complete Python Programming Course",
         description: "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!",
-        image: require('../assets/course1.jpg'),
+        image: require('../../assets/course1.jpg'),
         department: "Information Systems",
         lecture: "Mayet",
         videos: [
@@ -60,7 +60,7 @@ const courses = [
         id: "2",
         title: "React - The Complete Guide (incl Hooks, React Router, Redux)",
         description: "Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!",
-        image: require('../assets/course2.jpg'),
+        image: require('../../assets/course2.jpg'),
         department: "Computer Science",
         lecture: "Kedir",
         videos: [
@@ -101,7 +101,7 @@ const courses = [
         id: "3",
         title: "Computer Networks Fundamentals",
         description: "Use this course to cover your Computer Networking basics!",
-        image: require('../assets/course3.jpg'),
+        image: require('../../assets/course3.jpg'),
         department: "Computer Science",
         lecture: "Getnet",
         videos: [
@@ -142,7 +142,7 @@ const courses = [
         id: "4",
         title: "Numerical Methods and Optimization in Python",
         description: "Gaussian Elimination, Eigenvalues, Numerical Integration, Interpolation, Differential Equations and Operations Research",
-        image: require('../assets/course4.jpg'),
+        image: require('../../assets/course4.jpg'),
         department: "Mathimatics",
         lecture: "Tekleweld",
         videos: [
@@ -182,7 +182,7 @@ const courses = [
         id: "5",
         title: "Mathematical Foundations of Machine Learning",
         description: "Essential Linear Algebra and Calculus Hands-On in NumPy, TensorFlow, and PyTorch",
-        image: require('../assets/course1.jpg'),
+        image: require('../../assets/course1.jpg'),
         department:"Information Technology",
         lecture: "Sami",
         videos: [
@@ -223,7 +223,7 @@ const courses = [
         id: "6",
         title: "Learn JAVA Programming - Beginner to Master",
         description: "Deep Dive in Core Java programming -Standard Edition. A Practical approach to learn Java. Become a Java Expert",
-        image: require('../assets/course2.jpg'),
+        image: require('../../assets/course2.jpg'),
         department: "Information Technology",
         lecture: "Kibret Zewdu",
         videos: [
@@ -263,7 +263,7 @@ const courses = [
         id: "7",
         title: "The Complete SQL and MySQL Course - From Beginner to Expert",
         description: "Learn the Basics of Managing Data with SQL - Basics, Transactions, Views, Pages and Stored Procedures",
-        image: require('../assets/course3.jpg'),
+        image: require('../../assets/course3.jpg'),
         department: "Information Science",
         lecture: "Hailu G",
         videos: [
@@ -303,7 +303,7 @@ const courses = [
         id: "8",
         title: "Complete Machine Learning & Data Science Course",
         description: "Learn Data Science, Data Analysis, Machine Learning (Artificial Intelligence) and Python with Tensorflow, Pandas & more!",
-        image: require('../assets/course4.jpg'),
+        image: require('../../assets/course4.jpg'),
         department: "Computer Science",
         lecture: "Girma",
         videos: [
